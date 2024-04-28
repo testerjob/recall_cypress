@@ -47,6 +47,12 @@ export class Locators{
     selectValidImageMessage = '#error'
     uploadedUnsupportedFileMessage = '#invalid'
 
+    //ADD CUSTOMER
+    myAccountDropDown = '.dropdown-toggle > .caret'
+    addCustomerDropDownOption = '.open>.dropdown-menu>:nth-child(4)>a'
+    addCustomerPageTitle = 'legend'
+
+
 
 
 }

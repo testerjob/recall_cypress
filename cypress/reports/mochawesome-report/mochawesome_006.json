@@ -1,0 +1,165 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-04-28T18:36:02.531Z",
+    "end": "2024-04-28T18:36:41.677Z",
+    "duration": 39146,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f74c40e4-8c79-429c-a9c8-8c0ee2567b4d",
+      "title": "",
+      "fullFile": "cypress/e2e/File_upload.cy.js",
+      "file": "cypress/e2e/File_upload.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "405dec79-6440-4ebb-ab98-bea946464fb3",
+          "title": "File uploads",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Upload file from my mac dir",
+              "fullTitle": "File uploads Upload file from my mac dir",
+              "timedOut": null,
+              "duration": 7221,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.loginPositive();\nprofilePage.clickChooseFileButton();\nprofilePage.clickUploadFileButton();\nprofilePage.checkMessageFileUploaded();",
+              "err": {},
+              "uuid": "9ed94c35-3428-4bec-af5c-a3c589ea02e7",
+              "parentUUID": "405dec79-6440-4ebb-ab98-bea946464fb3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Upload profile image",
+              "fullTitle": "File uploads Upload profile image",
+              "timedOut": null,
+              "duration": 9516,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.loginPositive();\nprofilePage.clickChooseProfileImage1Button();\nprofilePage.clickUploadProfileButton();\ncy.wait(8000);\nprofilePage.checkMessageImageExist();",
+              "err": {},
+              "uuid": "2ee62806-c94a-4f06-9927-977cee00d8d7",
+              "parentUUID": "405dec79-6440-4ebb-ab98-bea946464fb3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Error to check correct message for uploading the same image",
+              "fullTitle": "File uploads Error to check correct message for uploading the same image",
+              "timedOut": null,
+              "duration": 9707,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.loginPositive();\nprofilePage.clickChooseProfileImage1Button();\nprofilePage.clickUploadProfileButton();\ncy.wait(8000);\nprofilePage.checkMessageImageExist();",
+              "err": {},
+              "uuid": "9d70156c-eb7f-43ff-a72b-8501fc055166",
+              "parentUUID": "405dec79-6440-4ebb-ab98-bea946464fb3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Upload unsupported file",
+              "fullTitle": "File uploads Upload unsupported file",
+              "timedOut": null,
+              "duration": 10303,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.loginPositive();\nprofilePage.uploadUnsuportedFileToImage();\nprofilePage.selectedWrongImageMessage();\nprofilePage.clickUploadProfileButton();\ncy.wait(7000);\nprofilePage.uploadedUnsupportedFileFormatMessage();",
+              "err": {},
+              "uuid": "a0b9baf0-d800-413e-94ba-1c53b5e9464e",
+              "parentUUID": "405dec79-6440-4ebb-ab98-bea946464fb3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9ed94c35-3428-4bec-af5c-a3c589ea02e7",
+            "2ee62806-c94a-4f06-9927-977cee00d8d7",
+            "9d70156c-eb7f-43ff-a72b-8501fc055166",
+            "a0b9baf0-d800-413e-94ba-1c53b5e9464e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 36747,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/mochawesome-report",
+        "reportPageTitle": "Project Frame Report",
+        "embeddedScreenshots": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

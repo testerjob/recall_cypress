@@ -1,0 +1,127 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-04-28T06:31:33.461Z",
+    "end": "2024-04-28T06:31:33.561Z",
+    "duration": 100,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "223b6387-c72b-4cfa-af6d-d7cbd8fc726f",
+      "title": "",
+      "fullFile": "cypress/e2e/Read_file.cy.js",
+      "file": "cypress/e2e/Read_file.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7fd31437-58fd-4152-b19c-019232a3fabc",
+          "title": "Read file",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Read text file from project",
+              "fullTitle": "Read file Read text file from project",
+              "timedOut": null,
+              "duration": 45,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.readFile('cypress/fixtures/text_to_read.txt').should('contain', 'Lorem Ipsum is simply dummy text');",
+              "err": {},
+              "uuid": "9253a4bf-e364-49d3-b6ce-114de2f46d20",
+              "parentUUID": "7fd31437-58fd-4152-b19c-019232a3fabc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Read a file from my mac",
+              "fullTitle": "Read file Read a file from my mac",
+              "timedOut": null,
+              "duration": 24,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.readFile('/Users/alex/Documents/Files_for_cyppress_recall/read_file_from_mac.txt').should('contain', 'It is a long established fact that a reader');",
+              "err": {},
+              "uuid": "8bc0731c-51f3-4c58-92a2-674a8a2fa555",
+              "parentUUID": "7fd31437-58fd-4152-b19c-019232a3fabc",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9253a4bf-e364-49d3-b6ce-114de2f46d20",
+            "8bc0731c-51f3-4c58-92a2-674a8a2fa555"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 69,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/mochawesome-report",
+        "reportPageTitle": "Project Frame Report",
+        "embeddedScreenshots": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-04-28T06:32:06.754Z",
+    "end": "2024-04-28T06:32:19.928Z",
+    "duration": 13174,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "66574e2e-57af-4fad-9745-63c0b010729d",
+      "title": "",
+      "fullFile": "cypress/e2e/Registration_with_existing_email.cy.js",
+      "file": "cypress/e2e/Registration_with_existing_email.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e50022fd-10e2-4325-828b-ee4d4bf29732",
+          "title": "Registration-Positive",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Fill out registartion form",
+              "fullTitle": "Registration-Positive Fill out registartion form",
+              "timedOut": null,
+              "duration": 12126,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"/Registration_with_existing_email.cy.js/Unsuccessfull_login_wrong_email.png\"\n    ]\n  ]\n}",
+              "code": "registerPage.enterUserName(userName);\nregisterPage.enterEmail(globalEmail);\nregisterPage.enterPassword(globalPassword);\nregisterPage.enterPasswordConfirm(globalPasswordConfirm);\nregisterPage.enterDateOfBirth();\nregisterPage.enterPhoneNumber(phoneNumber);\nregisterPage.enterAddress(address);\nregisterPage.selectAddressType();\nregisterPage.selectGenderMale();\nregisterPage.selectCountry(country);\nregisterPage.selectState(state);\nregisterPage.selectCity(city);\nregisterPage.enterZipCode(zipcode);\nregisterPage.checkTermsBox();\nregisterPage.clcikSignUpRegistrationButton();\ncy.get(loc.unSuccessRegistrationMessage).should('exist').screenshot(\"Unsuccessfull_login_wrong_email\");",
+              "err": {},
+              "uuid": "46cefc4a-1fe5-437a-9efd-b8cc5523a493",
+              "parentUUID": "e50022fd-10e2-4325-828b-ee4d4bf29732",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "46cefc4a-1fe5-437a-9efd-b8cc5523a493"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 12126,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/mochawesome-report",
+        "reportPageTitle": "Project Frame Report",
+        "embeddedScreenshots": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

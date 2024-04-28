@@ -1,0 +1,108 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-04-28T06:31:35.340Z",
+    "end": "2024-04-28T06:31:47.929Z",
+    "duration": 12589,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "671f2dcd-5395-4f9e-8965-6c9194207d06",
+      "title": "",
+      "fullFile": "cypress/e2e/Regestration.cy.js",
+      "file": "cypress/e2e/Regestration.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "bc6df1f9-af75-4b0c-813a-ec94acf966d7",
+          "title": "Registration-Positive",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Fill out registartion form",
+              "fullTitle": "Registration-Positive Fill out registartion form",
+              "timedOut": null,
+              "duration": 11575,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "registerPage.clickRegistrationSign();\nregisterPage.enterUserName(globalUserName);\nregisterPage.enterEmail(globalEmail);\nregisterPage.enterPassword(globalPassword);\nregisterPage.enterPasswordConfirm(globalPasswordConfirm);\nregisterPage.enterDateOfBirth();\nregisterPage.enterPhoneNumber(phoneNumber);\nregisterPage.enterAddress(address);\nregisterPage.selectAddressType();\nregisterPage.selectGenderMale();\nregisterPage.selectCountry(country);\nregisterPage.selectState(state);\nregisterPage.selectCity(city);\nregisterPage.enterZipCode(zipcode);\nregisterPage.checkTermsBox();\nregisterPage.clcikSignUpRegistrationButton();\n//cy.get(loc.successRegistrationMessage).should('exist').screenshot(\"Successfull_registration_valid_email\")",
+              "err": {},
+              "uuid": "8650162d-1ad5-4e66-9205-4a39b352b1fe",
+              "parentUUID": "bc6df1f9-af75-4b0c-813a-ec94acf966d7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8650162d-1ad5-4e66-9205-4a39b352b1fe"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 11575,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/mochawesome-report",
+        "reportPageTitle": "Project Frame Report",
+        "embeddedScreenshots": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
