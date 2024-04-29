@@ -6,22 +6,22 @@ export class ProfilePage{
     clickChooseFileButton(){
         cy.get(loc.chooseFileButton1).selectFile({
             //contents: Cypress.Buffer.from('This text should be in file, just my note. First way.')
-            contents: '/Users/alex/Documents/Cypress_recall/cypress/fixtures/read_file_from_mac.txt',
+            contents: 'cypress/fixtures/read_file_from_mac.txt',
             fileName: 'read_file_from_mac.txt',
             mimeType: 'text/plain', ///json or depends on the file name
             lastModified: Date.now()}, {force: true})
         }
 
     clickChooseProfileImage1Button(){
-        cy.get(loc.chooseProfileImageBUtton).selectFile('/Users/alex/Documents/Cypress_recall/cypress/fixtures/Upload_QA_image1.jpeg')
+        cy.get(loc.chooseProfileImageBUtton).selectFile('cypress/fixtures/Upload_QA_image1.jpeg')
     }
 
     clickChooseProfileImage2Button(){
-        cy.get(loc.chooseProfileImageBUtton).selectFile('/Users/alex/Documents/Cypress_recall/cypress/fixtures/Upload_QA_image2.jpeg')
+        cy.get(loc.chooseProfileImageBUtton).selectFile('cypress/fixtures/Upload_QA_image2.jpeg')
     }
 
     uploadUnsuportedFileToImage(){
-        cy.get(loc.chooseProfileImageBUtton).selectFile('/Users/alex/Documents/Cypress_recall/cypress/fixtures/read_file_from_mac.txt')
+        cy.get(loc.chooseProfileImageBUtton).selectFile('cypress/fixtures/read_file_from_mac.txt')
     }
 
     selectedWrongImageMessage(){
