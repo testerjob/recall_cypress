@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2024-04-29T01:12:08.920Z",
-    "end": "2024-04-29T01:12:18.582Z",
-    "duration": 9662,
+    "start": "2024-04-29T03:03:58.620Z",
+    "end": "2024-04-29T03:04:07.755Z",
+    "duration": 9135,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "aa7043bb-9eb3-4919-bbf1-c60bc6ea774c",
+      "uuid": "1ab1a861-e43c-4cd3-b2fe-eb2e9c3f4b96",
       "title": "",
       "fullFile": "cypress/e2e/Login_LogOut.cy.js",
       "file": "cypress/e2e/Login_LogOut.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "60415cf4-9013-4540-8fb4-f458a0210465",
+          "uuid": "38e92ab1-a75c-4bed-a809-3a0b5102a27c",
           "title": "Positive login with valid credantials",
           "fullFile": "",
           "file": "",
@@ -38,17 +38,17 @@
               "title": "Valid email and valid password",
               "fullTitle": "Positive login with valid credantials Valid email and valid password",
               "timedOut": null,
-              "duration": 5633,
+              "duration": 4967,
               "state": "passed",
-              "speed": "medium",
+              "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"/Login_LogOut.cy.js/Successfull log IN.png\"\n    ]\n  ]\n}",
               "code": "loginPage.clickLoginSign();\nloginPage.enterLoginUserName(globalUserName);\nloginPage.enterLoginPassword(globalPassword);\nloginPage.clickLoginButton();\ncy.get('legend').contains('My Profile').should('be.visible');\ncy.get('.nav > :nth-child(6) > a').contains('a', ' Welcome Mr. alex_cypress').should('be.visible').screenshot('Successfull log IN');",
               "err": {},
-              "uuid": "491c4d74-10be-4ffd-821e-3f5d00c57d3a",
-              "parentUUID": "60415cf4-9013-4540-8fb4-f458a0210465",
+              "uuid": "84bf064d-46d5-48b0-ab5b-284d59bc81b6",
+              "parentUUID": "38e92ab1-a75c-4bed-a809-3a0b5102a27c",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Logout aftre login",
               "fullTitle": "Positive login with valid credantials Logout aftre login",
               "timedOut": null,
-              "duration": 2967,
+              "duration": 3108,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"/Login_LogOut.cy.js/Successfull log Out.png\"\n    ]\n  ]\n}",
               "code": "cy.visit('https://www.thetestingworld.com/testings/dashboard.php');\nloginPage.clickLoginSign();\nloginPage.enterLoginUserName(globalUserName);\nloginPage.enterLoginPassword(globalPassword);\nloginPage.clickLoginButton();\nloginPage.clickLogoutButton();\ncy.get(loc.registrationSign).click().screenshot('Successfull log Out');",
               "err": {},
-              "uuid": "ccd4b5a7-c4ea-4a00-abdb-7cfc573c6799",
-              "parentUUID": "60415cf4-9013-4540-8fb4-f458a0210465",
+              "uuid": "8957376b-c9d1-41bb-b2a3-d593d89f9004",
+              "parentUUID": "38e92ab1-a75c-4bed-a809-3a0b5102a27c",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "491c4d74-10be-4ffd-821e-3f5d00c57d3a",
-            "ccd4b5a7-c4ea-4a00-abdb-7cfc573c6799"
+            "84bf064d-46d5-48b0-ab5b-284d59bc81b6",
+            "8957376b-c9d1-41bb-b2a3-d593d89f9004"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 8600,
+          "duration": 8075,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

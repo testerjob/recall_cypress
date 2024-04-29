@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-04-29T01:12:54.674Z",
-    "end": "2024-04-29T01:13:07.795Z",
-    "duration": 13121,
+    "start": "2024-04-29T03:04:43.000Z",
+    "end": "2024-04-29T03:04:56.137Z",
+    "duration": 13137,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "9317c8db-40f8-42f0-96ee-fe631bf1fd11",
+      "uuid": "d518c6e2-3128-4252-80b7-2973c9a5174c",
       "title": "",
       "fullFile": "cypress/e2e/Registration_with_existing_email.cy.js",
       "file": "cypress/e2e/Registration_with_existing_email.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "dd6967fe-81c9-445c-89d2-0b750f6ba1f8",
+          "uuid": "c8dcdfd5-4a0e-4f3f-9124-98a4206ce7dc",
           "title": "Registration-Positive",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Fill out registartion form",
               "fullTitle": "Registration-Positive Fill out registartion form",
               "timedOut": null,
-              "duration": 12083,
+              "duration": 12087,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"/Registration_with_existing_email.cy.js/Unsuccessfull_login_wrong_email.png\"\n    ]\n  ]\n}",
               "code": "registerPage.enterUserName(userName);\nregisterPage.enterEmail(globalEmail);\nregisterPage.enterPassword(globalPassword);\nregisterPage.enterPasswordConfirm(globalPasswordConfirm);\nregisterPage.enterDateOfBirth();\nregisterPage.enterPhoneNumber(phoneNumber);\nregisterPage.enterAddress(address);\nregisterPage.selectAddressType();\nregisterPage.selectGenderMale();\nregisterPage.selectCountry(country);\nregisterPage.selectState(state);\nregisterPage.selectCity(city);\nregisterPage.enterZipCode(zipcode);\nregisterPage.checkTermsBox();\nregisterPage.clcikSignUpRegistrationButton();\ncy.get(loc.unSuccessRegistrationMessage).should('exist').screenshot(\"Unsuccessfull_login_wrong_email\");",
               "err": {},
-              "uuid": "9472a7fb-d114-47ac-bb00-b85755f9201c",
-              "parentUUID": "dd6967fe-81c9-445c-89d2-0b750f6ba1f8",
+              "uuid": "a6e878b5-9b6d-42c3-a2c2-973fa6b55b5c",
+              "parentUUID": "c8dcdfd5-4a0e-4f3f-9124-98a4206ce7dc",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "9472a7fb-d114-47ac-bb00-b85755f9201c"
+            "a6e878b5-9b6d-42c3-a2c2-973fa6b55b5c"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 12083,
+          "duration": 12087,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

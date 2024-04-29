@@ -12,7 +12,7 @@ describe("File uploads", function(){
         loginPage.loginPositive()
         profilePage.clickChooseFileButton()
         profilePage.clickUploadFileButton()
-        profilePage.checkMessageFileUploaded().screenshot('File uploaded success message')
+        profilePage.checkMessageFileUploaded()
     })
 
     it("Upload profile image", function(){
@@ -20,7 +20,7 @@ describe("File uploads", function(){
         profilePage.clickChooseProfileImage1Button()
         profilePage.clickUploadProfileButton()
         cy.wait(8000)
-        profilePage.checkMessageImageExist().screenshot('Image already exist message')
+        profilePage.checkMessageImageExist()
     })
 
     it("Error to check correct message for uploading the same image", function(){
@@ -37,7 +37,7 @@ describe("File uploads", function(){
         profilePage.selectedWrongImageMessage()
         profilePage.clickUploadProfileButton()
         cy.wait(7000)
-        profilePage.uploadedUnsupportedFileFormatMessage().screenshot('File not supported')
+        profilePage.uploadedUnsupportedFileFormatMessage()
 
 
 

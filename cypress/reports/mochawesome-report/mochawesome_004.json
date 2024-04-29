@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-04-29T01:12:21.406Z",
-    "end": "2024-04-29T01:12:35.563Z",
-    "duration": 14157,
+    "start": "2024-04-29T03:04:10.551Z",
+    "end": "2024-04-29T03:04:23.254Z",
+    "duration": 12703,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "edb46586-daae-4d4b-bec8-396b7bc713a5",
+      "uuid": "d2f80533-51b7-4c74-abd6-894aa56a2eb0",
       "title": "",
       "fullFile": "cypress/e2e/Regestration.cy.js",
       "file": "cypress/e2e/Regestration.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "65c5f47a-39b6-48bb-9897-8aa0b84a1a97",
+          "uuid": "f35de78e-892d-4cae-a877-047e24c94a90",
           "title": "Registration-Positive",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Fill out registartion form",
               "fullTitle": "Registration-Positive Fill out registartion form",
               "timedOut": null,
-              "duration": 13128,
+              "duration": 11656,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "registerPage.clickRegistrationSign();\nregisterPage.enterUserName(globalUserName);\nregisterPage.enterEmail(globalEmail);\nregisterPage.enterPassword(globalPassword);\nregisterPage.enterPasswordConfirm(globalPasswordConfirm);\nregisterPage.enterDateOfBirth();\nregisterPage.enterPhoneNumber(phoneNumber);\nregisterPage.enterAddress(address);\nregisterPage.selectAddressType();\nregisterPage.selectGenderMale();\nregisterPage.selectCountry(country);\nregisterPage.selectState(state);\nregisterPage.selectCity(city);\nregisterPage.enterZipCode(zipcode);\nregisterPage.checkTermsBox();\nregisterPage.clcikSignUpRegistrationButton();\n//cy.get(loc.successRegistrationMessage).should('exist').screenshot(\"Successfull_registration_valid_email\")",
               "err": {},
-              "uuid": "38fa3af3-844e-4ec1-be4c-78c939b07275",
-              "parentUUID": "65c5f47a-39b6-48bb-9897-8aa0b84a1a97",
+              "uuid": "77b6eb98-743b-4096-b5ab-909a97f18d8e",
+              "parentUUID": "f35de78e-892d-4cae-a877-047e24c94a90",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "38fa3af3-844e-4ec1-be4c-78c939b07275"
+            "77b6eb98-743b-4096-b5ab-909a97f18d8e"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 13128,
+          "duration": 11656,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

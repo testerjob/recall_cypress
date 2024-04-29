@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-04-29T01:12:39.862Z",
-    "end": "2024-04-29T01:12:53.714Z",
-    "duration": 13852,
+    "start": "2024-04-29T03:04:27.427Z",
+    "end": "2024-04-29T03:04:42.075Z",
+    "duration": 14648,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "f02fa38c-24df-4695-b215-cd286fae6ac3",
+      "uuid": "b86b44ef-db21-4f98-9680-9cd281d68497",
       "title": "",
       "fullFile": "cypress/e2e/Registration_random.cy.js",
       "file": "cypress/e2e/Registration_random.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "cebd35e9-4b46-44e5-8700-05dc617a2393",
+          "uuid": "546f57f6-6228-421d-b7db-e4963c2f475a",
           "title": "Registration-Positive",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Fill out registartion form",
               "fullTitle": "Registration-Positive Fill out registartion form",
               "timedOut": null,
-              "duration": 11115,
+              "duration": 11361,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "registerPage.enterUserName(randomName);\nregisterPage.enterEmail(randomEmail);\nregisterPage.enterPassword(randomPassword);\nregisterPage.enterPasswordConfirm(randomPassword);\nregisterPage.enterDateOfBirth();\nregisterPage.enterPhoneNumber(randomPhone);\nregisterPage.enterAddress(randomAddress);\nregisterPage.selectAddressType();\nregisterPage.selectGenderMale();\nregisterPage.selectCountry(country);\nregisterPage.selectState(state);\nregisterPage.selectCity(city);\nregisterPage.enterZipCode(randomZipCode);\nregisterPage.checkTermsBox();",
               "err": {},
-              "uuid": "f6abbf90-a137-407f-8684-f44db9312f87",
-              "parentUUID": "cebd35e9-4b46-44e5-8700-05dc617a2393",
+              "uuid": "affdaff7-b652-4d48-a648-7b7d227ecd7b",
+              "parentUUID": "546f57f6-6228-421d-b7db-e4963c2f475a",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "f6abbf90-a137-407f-8684-f44db9312f87"
+            "affdaff7-b652-4d48-a648-7b7d227ecd7b"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 11115,
+          "duration": 11361,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

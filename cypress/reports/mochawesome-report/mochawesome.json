@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-04-29T01:11:43.352Z",
-    "end": "2024-04-29T01:11:52.002Z",
-    "duration": 8650,
+    "start": "2024-04-29T03:03:12.520Z",
+    "end": "2024-04-29T03:03:20.140Z",
+    "duration": 7620,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "83cb93fb-1db4-4cdf-b6de-585c72e87368",
+      "uuid": "6e6eb377-d457-417d-83cf-30b6c8fdb69e",
       "title": "",
       "fullFile": "cypress/e2e/Add_new_customer.cy.js",
       "file": "cypress/e2e/Add_new_customer.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "d551cad5-ae9b-49d9-9ee8-af34c14668b4",
+          "uuid": "573f2d3d-85ba-40fe-a903-3b3ca9a8e15e",
           "title": "Add new customer",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "New customer from fake",
               "fullTitle": "Add new customer New customer from fake",
               "timedOut": null,
-              "duration": 6498,
+              "duration": 5968,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "loginPage.loginPositive();\naddCustomer.clickMyAccountDropDown();\naddCustomer.clickAddCustomerDropDownOption();\ncy.get(loc.addCustomerPageTitle).should('contain', 'Add Customer !');",
               "err": {},
-              "uuid": "102613e1-74d8-4aff-9ecb-7cca31c2ff27",
-              "parentUUID": "d551cad5-ae9b-49d9-9ee8-af34c14668b4",
+              "uuid": "a493e35e-fc71-4d03-8fc2-32f4df807e77",
+              "parentUUID": "573f2d3d-85ba-40fe-a903-3b3ca9a8e15e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "102613e1-74d8-4aff-9ecb-7cca31c2ff27"
+            "a493e35e-fc71-4d03-8fc2-32f4df807e77"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 6498,
+          "duration": 5968,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

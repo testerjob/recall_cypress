@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2024-04-29T01:12:19.500Z",
-    "end": "2024-04-29T01:12:19.607Z",
-    "duration": 107,
+    "start": "2024-04-29T03:04:08.653Z",
+    "end": "2024-04-29T03:04:08.753Z",
+    "duration": 100,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "00413958-b2bd-45f3-aaad-7fec0b723fdd",
+      "uuid": "b5dea27f-3fd6-4d42-88c3-9e079f32efbe",
       "title": "",
       "fullFile": "cypress/e2e/Read_file.cy.js",
       "file": "cypress/e2e/Read_file.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "c257f0a5-c422-4583-b385-c0e7c685d914",
+          "uuid": "b565c9ba-7c31-45e9-8ab3-6e7c3279f9de",
           "title": "Read file",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Read text file from project",
               "fullTitle": "Read file Read text file from project",
               "timedOut": null,
-              "duration": 50,
+              "duration": 43,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.readFile('cypress/fixtures/text_to_read.txt').should('contain', 'Lorem Ipsum is simply dummy text');",
               "err": {},
-              "uuid": "0ffc755d-999a-404a-902b-7b3c488744c1",
-              "parentUUID": "c257f0a5-c422-4583-b385-c0e7c685d914",
+              "uuid": "d52e2d26-21c7-45f5-ad64-f16d138c69e4",
+              "parentUUID": "b565c9ba-7c31-45e9-8ab3-6e7c3279f9de",
               "isHook": false,
               "skipped": false
             },
@@ -56,30 +56,30 @@
               "title": "Read a file from my mac",
               "fullTitle": "Read file Read a file from my mac",
               "timedOut": null,
-              "duration": 24,
+              "duration": 26,
               "state": "passed",
               "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.readFile('/Users/alex/Documents/Files_for_cyppress_recall/read_file_from_mac.txt').should('contain', 'It is a long established fact that a reader');",
+              "code": "cy.readFile('/Users/alex/Documents/Cypress_recall/cypress/fixtures/read_file_from_mac.txt').should('contain', 'It is a long established fact that a reader');",
               "err": {},
-              "uuid": "3d8e7d02-b9a9-4c71-a035-76251d2e3cdf",
-              "parentUUID": "c257f0a5-c422-4583-b385-c0e7c685d914",
+              "uuid": "71c21273-89af-44e3-8449-ed7effdc2fa8",
+              "parentUUID": "b565c9ba-7c31-45e9-8ab3-6e7c3279f9de",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "0ffc755d-999a-404a-902b-7b3c488744c1",
-            "3d8e7d02-b9a9-4c71-a035-76251d2e3cdf"
+            "d52e2d26-21c7-45f5-ad64-f16d138c69e4",
+            "71c21273-89af-44e3-8449-ed7effdc2fa8"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 74,
+          "duration": 69,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
