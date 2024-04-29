@@ -6,22 +6,22 @@ export class ProfilePage{
     clickChooseFileButton(){
         cy.get(loc.chooseFileButton1).selectFile({
             //contents: Cypress.Buffer.from('This text should be in file, just my note. First way.')
-            contents: '/Users/alex/Documents/Files_for_cyppress_recall/read_file_from_mac.txt',
+            contents: 'cypress/fixtures/read_file_from_mac.txt',
             fileName: 'read_file_from_mac.txt',
             mimeType: 'text/plain', ///json or depends on the file name
             lastModified: Date.now()}, {force: true})
         }
 
     clickChooseProfileImage1Button(){
-        cy.get(loc.chooseProfileImageBUtton).selectFile('/Users/alex/Documents/Files_for_cyppress_recall/Upload_QA_image1.jpeg')
+        cy.get(loc.chooseProfileImageBUtton).selectFile('cypress/fixtures/Upload_QA_image1.jpeg')
     }
 
     clickChooseProfileImage2Button(){
-        cy.get(loc.chooseProfileImageBUtton).selectFile('/Users/alex/Documents/Files_for_cyppress_recall/upload_qa_image2.jpeg')
+        cy.get(loc.chooseProfileImageBUtton).selectFile('cypress/fixtures/Upload_QA_image2.jpeg')
     }
 
     uploadUnsuportedFileToImage(){
-        cy.get(loc.chooseProfileImageBUtton).selectFile('/Users/alex/Documents/Files_for_cyppress_recall/read_file_from_mac.txt')
+        cy.get(loc.chooseProfileImageBUtton).selectFile('cypress/fixtures/read_file_from_mac.txt')
     }
 
     selectedWrongImageMessage(){
@@ -29,7 +29,7 @@ export class ProfilePage{
     }
 
     uploadedUnsupportedFileFormatMessage(){
-        cy.get(loc.uploadedUnsupportedFileMessage).should('contain','***Invalid file Size or Type***')
+        cy.get(loc.uploadedUnsupportedFileMessage).should('contain','***Invalid file Size or Type***').screenshot('File not supported')
     }
 
 
@@ -58,7 +58,7 @@ export class ProfilePage{
     }
 
     checkMessageFileUploaded(){
-        cy.get(loc.successfullFileUploadMessage).should('contain', 'File updated successfully')                                                  
+        cy.get(loc.successfullFileUploadMessage).should('contain', 'File updated successfully').screenshot('File uploaded success message')                                                 
     }
 
     checkMessageImageUploade(){
@@ -66,7 +66,7 @@ export class ProfilePage{
     }
 
     checkMessageImageExist(){
-        cy.get(loc.fileExistMessage).should('contain', 'already exists.')
+        cy.get(loc.fileExistMessage).should('contain', 'already exists.').screenshot('Image already exist message')
     }
 
 

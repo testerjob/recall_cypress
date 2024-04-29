@@ -2,12 +2,22 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   e2e: {
-    setupNodeEvents(on, config) {
-      // implement node event listeners here
-    },
-    watchForFileChanges:false,
-    //baseUrl: 'http://www.thetestingworld.com',
-    pageLoadTimeout:100000,
+    watchForFileChanges: false,
+    reporter: "mochawesome",
+    projectId: "i3ct1d",
+    video: false,
     //retries: 3,
+    reporterOptions : {
+      charts: true,
+      overwrite: false,
+      html: false,
+      json: true,
+      reportDir: "cypress/reports/mochawesome-report",
+      reportPageTitle :"Project Frame Report",
+      embeddedScreenshots: true,
+    },
+    defaultCommandTimeout: 10000,
+    setupNodeEvents(on, config) {
+    },
   },
-});
+})

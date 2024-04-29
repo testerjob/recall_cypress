@@ -1,0 +1,127 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-04-29T03:03:58.620Z",
+    "end": "2024-04-29T03:04:07.755Z",
+    "duration": 9135,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1ab1a861-e43c-4cd3-b2fe-eb2e9c3f4b96",
+      "title": "",
+      "fullFile": "cypress/e2e/Login_LogOut.cy.js",
+      "file": "cypress/e2e/Login_LogOut.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "38e92ab1-a75c-4bed-a809-3a0b5102a27c",
+          "title": "Positive login with valid credantials",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Valid email and valid password",
+              "fullTitle": "Positive login with valid credantials Valid email and valid password",
+              "timedOut": null,
+              "duration": 4967,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"/Login_LogOut.cy.js/Successfull log IN.png\"\n    ]\n  ]\n}",
+              "code": "loginPage.clickLoginSign();\nloginPage.enterLoginUserName(globalUserName);\nloginPage.enterLoginPassword(globalPassword);\nloginPage.clickLoginButton();\ncy.get('legend').contains('My Profile').should('be.visible');\ncy.get('.nav > :nth-child(6) > a').contains('a', ' Welcome Mr. alex_cypress').should('be.visible').screenshot('Successfull log IN');",
+              "err": {},
+              "uuid": "84bf064d-46d5-48b0-ab5b-284d59bc81b6",
+              "parentUUID": "38e92ab1-a75c-4bed-a809-3a0b5102a27c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Logout aftre login",
+              "fullTitle": "Positive login with valid credantials Logout aftre login",
+              "timedOut": null,
+              "duration": 3108,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"/Login_LogOut.cy.js/Successfull log Out.png\"\n    ]\n  ]\n}",
+              "code": "cy.visit('https://www.thetestingworld.com/testings/dashboard.php');\nloginPage.clickLoginSign();\nloginPage.enterLoginUserName(globalUserName);\nloginPage.enterLoginPassword(globalPassword);\nloginPage.clickLoginButton();\nloginPage.clickLogoutButton();\ncy.get(loc.registrationSign).click().screenshot('Successfull log Out');",
+              "err": {},
+              "uuid": "8957376b-c9d1-41bb-b2a3-d593d89f9004",
+              "parentUUID": "38e92ab1-a75c-4bed-a809-3a0b5102a27c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "84bf064d-46d5-48b0-ab5b-284d59bc81b6",
+            "8957376b-c9d1-41bb-b2a3-d593d89f9004"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8075,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/mochawesome-report",
+        "reportPageTitle": "Project Frame Report",
+        "embeddedScreenshots": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

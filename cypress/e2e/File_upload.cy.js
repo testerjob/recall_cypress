@@ -5,7 +5,7 @@ import { ProfilePage } from "../pages/profile_page.cy"
 
 const loc = new Locators()
 const loginPage = new LoginPage()
-const profilePage = new ProfilePage
+const profilePage = new ProfilePage()
 
 describe("File uploads", function(){
     it("Upload file from my mac dir", () =>{

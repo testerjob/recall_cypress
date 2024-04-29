@@ -1,0 +1,165 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-04-29T03:03:21.068Z",
+    "end": "2024-04-29T03:03:57.711Z",
+    "duration": 36643,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3b288c52-b099-49e4-a0f2-0a33f0113290",
+      "title": "",
+      "fullFile": "cypress/e2e/File_upload.cy.js",
+      "file": "cypress/e2e/File_upload.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ef1d0644-77ac-4b46-bc41-fc1aa3585878",
+          "title": "File uploads",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Upload file from my mac dir",
+              "fullTitle": "File uploads Upload file from my mac dir",
+              "timedOut": null,
+              "duration": 6659,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"/File_upload.cy.js/File uploaded success message.png\"\n    ]\n  ]\n}",
+              "code": "loginPage.loginPositive();\nprofilePage.clickChooseFileButton();\nprofilePage.clickUploadFileButton();\nprofilePage.checkMessageFileUploaded();",
+              "err": {},
+              "uuid": "9301aeb3-c233-4fde-8895-5361d1f03540",
+              "parentUUID": "ef1d0644-77ac-4b46-bc41-fc1aa3585878",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Upload profile image",
+              "fullTitle": "File uploads Upload profile image",
+              "timedOut": null,
+              "duration": 9803,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"/File_upload.cy.js/Image already exist message.png\"\n    ]\n  ]\n}",
+              "code": "loginPage.loginPositive();\nprofilePage.clickChooseProfileImage1Button();\nprofilePage.clickUploadProfileButton();\ncy.wait(8000);\nprofilePage.checkMessageImageExist();",
+              "err": {},
+              "uuid": "6afc3f2d-dbec-46ed-b56c-96fee59b1ad3",
+              "parentUUID": "ef1d0644-77ac-4b46-bc41-fc1aa3585878",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Error to check correct message for uploading the same image",
+              "fullTitle": "File uploads Error to check correct message for uploading the same image",
+              "timedOut": null,
+              "duration": 10046,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"/File_upload.cy.js/Image already exist message (1).png\"\n    ]\n  ]\n}",
+              "code": "loginPage.loginPositive();\nprofilePage.clickChooseProfileImage1Button();\nprofilePage.clickUploadProfileButton();\ncy.wait(8000);\nprofilePage.checkMessageImageExist();",
+              "err": {},
+              "uuid": "5b06a511-8083-46c6-a373-0fd747e45431",
+              "parentUUID": "ef1d0644-77ac-4b46-bc41-fc1aa3585878",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Upload unsupported file",
+              "fullTitle": "File uploads Upload unsupported file",
+              "timedOut": null,
+              "duration": 9029,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"/File_upload.cy.js/File not supported.png\"\n    ]\n  ]\n}",
+              "code": "loginPage.loginPositive();\nprofilePage.uploadUnsuportedFileToImage();\nprofilePage.selectedWrongImageMessage();\nprofilePage.clickUploadProfileButton();\ncy.wait(7000);\nprofilePage.uploadedUnsupportedFileFormatMessage();",
+              "err": {},
+              "uuid": "92781de1-6ee0-42d7-bb0e-18711aa3fe07",
+              "parentUUID": "ef1d0644-77ac-4b46-bc41-fc1aa3585878",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9301aeb3-c233-4fde-8895-5361d1f03540",
+            "6afc3f2d-dbec-46ed-b56c-96fee59b1ad3",
+            "5b06a511-8083-46c6-a373-0fd747e45431",
+            "92781de1-6ee0-42d7-bb0e-18711aa3fe07"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 35537,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/mochawesome-report",
+        "reportPageTitle": "Project Frame Report",
+        "embeddedScreenshots": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
